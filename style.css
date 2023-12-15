@@ -1,0 +1,120 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav ul {
+  display: inline;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: rgb(205, 205, 205);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #898787;
+}
+
+nav ul li a:active {
+  color: #acd613;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+section {
+  padding: 2rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+section h2:first-child {
+  margin-top: 0;
+}
+
+.highlight {
+  background-color: #ddd;
+  padding: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style the button */
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Add a smooth transition effect when hovering over the navigation items */
+nav ul li a:hover {
+  color: #ddd;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:active {
+  color: #999;
+  transition: color 0.3s ease;
+}
+@keyframes highlight {
+  from {
+      background-color: #ddd;
+  }
+
+  to {
+      background-color: #eee;
+  }
+}
+
+.highlight {
+  background-color: #ddd;
+  padding: 0.5rem;
+  animation: highlight 2s infinite alternate;
+}
